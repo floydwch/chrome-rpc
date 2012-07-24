@@ -47,5 +47,5 @@ Requires [q](https://github.com/kriskowal/q/),
     npm test
 
 ## Todo ##
-Add sync version e.g. `var foo = chrome.rpc.sync('foo');`.
+Add sync version e.g. `var foo = chrome.rpc.sync('foo');`.  
 Add reject handling when exception is raised.
