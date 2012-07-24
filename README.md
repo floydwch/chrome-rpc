@@ -3,7 +3,7 @@ Since communication between extensions and their content scripts works by using
 [message passing](http://code.google.com/chrome/extensions/messaging.html)
 which is low level and complicated to control.
 
-`chrome-rpc` enable you use rpc-mechanism to communicate between extension and tab in *promise way*.
+Chrome-rpc enable you use rpc-mechanism to communicate between extension and tab in *promise way*.
 
 ## Example ##
     // RPC from tab to extension
