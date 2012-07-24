@@ -1,14 +1,11 @@
 # Chrome Remote Procedure Call between Extension and Tab(Content Script). #
-
 Since communication between extensions and their content scripts works by using
 [message passing](http://code.google.com/chrome/extensions/messaging.html)
 which is low level and complicated to control.
 
 `chrome-rpc` enable you use rpc-mechanism to communicate between extension and tab in *promise way*.
 
-
 ## Example ##
-
     // RPC from tab to extension
     // binding entension's global function
     chrome.rpc('foo').then(function(foo){
@@ -39,15 +36,16 @@ which is low level and complicated to control.
       foo.bar().then(function(baz){});
     });
 
-
 ## Dependencies ##
-
 Requires [q](https://github.com/kriskowal/q/),
 [underscore](https://github.com/documentcloud/underscore/)
 (or [Lo-Dash](https://github.com/bestiejs/lodash/)'s
 [mobile build](https://github.com/bestiejs/lodash/issues/54)).
 
-
 ## Test ##
     npm install
     npm test
+
+## Todo ##
+Add sync version e.g. `var foo = chrome.rpc.sync('foo');`.
+Add reject handling when exception is raised.
