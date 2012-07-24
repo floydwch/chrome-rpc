@@ -1,0 +1,26 @@
+{
+  "name": "chrome-rpc",
+  "description": "Remote procedure call helper for chrome extension.",
+  "version": "0.1.0",
+  "author": "floydsoft <floydsoft@gmail.com>",
+  "main": "chrome-rpc.js",
+  "dependencies": {
+    "underscore": "*",
+    "q": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "mocha-as-promised": "*",
+    "chai": "*",
+    "chai-as-promised": "*",
+    "sinon": "*",
+    "sinon-chai": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/floydsoft/chrome-rpc"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
